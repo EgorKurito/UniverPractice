@@ -38,7 +38,7 @@ class Point(object):
         dy = self.Y - other.Y
         dz = self.Z - other.Z
         return math.sqrt(dx**2 + dy**2 + dz**2)
-
+        
     def distanceToLine(self, a,b,c,q,p,t):
 
         def strToInt(n):
@@ -59,7 +59,7 @@ class Point(object):
         H = Point(strToInt(str(solve[0])),strToInt(str(solve[1])),strToInt(str(solve[2])))
         return self.distance(H)
 
-2
+
 class Triangle(Frame):
     def __init__(self, master):
         super().__init__(master)
